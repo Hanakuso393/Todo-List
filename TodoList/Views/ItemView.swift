@@ -13,14 +13,14 @@ struct ItemView: View {
     var body: some View {
         HStack {
             VStack(alignment: .leading, spacing: 10) {
-                        Text(title)
-                            .font(.largeTitle)
-                            .fontWeight(.bold)
-                        
-                        Text(description)
-                            .font(.body)
-                            .foregroundColor(.gray)
-                    }
+                Text(title)
+                    .font(.largeTitle)
+                    .fontWeight(.bold)
+                
+                Text(description)
+                    .font(.body)
+                    .foregroundColor(.gray)
+            }
             .padding()
             Spacer()
         }
@@ -28,5 +28,7 @@ struct ItemView: View {
 }
 
 #Preview {
-    ItemView(title: "Test", description: "Test Description that is super long and this will most likely we how long the descriptions are. ")
+    ItemView(title: "Test Title", description: "Test description that should be long and should wrap I think")
 }
+
+
