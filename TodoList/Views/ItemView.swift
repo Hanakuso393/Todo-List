@@ -8,11 +8,25 @@
 import SwiftUI
 
 struct ItemView: View {
+    var title: String
+    var description: String
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack {
+            VStack(alignment: .leading, spacing: 10) {
+                        Text(title)
+                            .font(.largeTitle)
+                            .fontWeight(.bold)
+                        
+                        Text(description)
+                            .font(.body)
+                            .foregroundColor(.gray)
+                    }
+            .padding()
+            Spacer()
+        }
     }
 }
 
 #Preview {
-    ItemView()
+    ItemView(title: "Test", description: "Test Description that is super long and this will most likely we how long the descriptions are. ")
 }

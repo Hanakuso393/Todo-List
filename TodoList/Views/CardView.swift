@@ -17,5 +17,5 @@ struct CardView: View {
 }
 
 #Preview {
-    CardView(item: Item(name: "Cheese Burger"))
+    CardView(item: Item(name: "Cheese Burger", description: "test"))
 }

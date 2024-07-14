@@ -26,6 +26,7 @@ struct SheetView: View {
                 }
                 Button {
                     print("Button pressed")
+                    items.append(Item(name: title, description: description))
                     isPresented.toggle()
                 } label: {
                     Text("Add item")

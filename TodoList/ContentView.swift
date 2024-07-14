@@ -17,7 +17,8 @@ struct ContentView: View {
                 List {
                     ForEach(items) { item in
                         NavigationLink {
-                            Text(item.name)
+                            ItemView(title: item.name, description: item.description)
+                            Spacer()
                         } label: {
                             CardView(item: item)
                         }
